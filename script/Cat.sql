@@ -209,7 +209,7 @@ CREATE TABLE `alteration` (
   `creation_date` datetime NOT NULL COMMENT '数据库创建时间',
   PRIMARY KEY (`id`),
   KEY `ind_date_domain_host` (`date`,`domain`,`hostname`)
-) ENGINE=InnoDB AUTO_INCREMENT=1241 DEFAULT CHARSET=utf8 COMMENT='变更表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='变更表';
 
 CREATE TABLE `alert` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自增长ID',
@@ -307,7 +307,7 @@ CREATE TABLE `overload` (
   `creation_date` datetime NOT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`),
   KEY `period` (`period`)
-) ENGINE=InnoDB AUTO_INCREMENT=1242 DEFAULT CHARSET=utf8 COMMENT='过大容量表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='过大容量表';
 
 CREATE TABLE `config_modification` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自增长ID',
@@ -318,11 +318,11 @@ CREATE TABLE `config_modification` (
   `date` datetime NOT NULL COMMENT '修改时间',
   `creation_date` datetime NOT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1242 DEFAULT CHARSET=utf8 COMMENT='配置修改记录表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='配置修改记录表';
 
 CREATE TABLE `user_define_rule` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自增长ID',
   `content` text NOT NULL COMMENT '用户定义规则',
   `creation_date` datetime NOT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1242 DEFAULT CHARSET=utf8 COMMENT='用户定义规则表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户定义规则表';
